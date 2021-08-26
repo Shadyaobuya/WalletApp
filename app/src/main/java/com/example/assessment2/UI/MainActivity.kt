@@ -21,6 +21,8 @@ class MainActivity : AppCompatActivity() {
             AccountDetails("Hoyo","4658743654","2020-02-01","30000","DEBIT"),
 
             )
+        var walletAdapter=WalletAdapter(walletDetails)
+        rvTransaction.adapter=walletAdapter
 
 
 
