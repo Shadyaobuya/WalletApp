@@ -14,11 +14,11 @@ class MainActivity : AppCompatActivity() {
         var rvTransaction=findViewById<RecyclerView>(R.id.rvWallet)
         rvTransaction.layoutManager=LinearLayoutManager(baseContext)
         var walletDetails= listOf(
-            AccountDetails("Mike","4658743654","2020-02-01","30000","DEBIT"),
-            AccountDetails("Hanah","4658743654","2020-02-01","30000","DEBIT"),
-            AccountDetails("michele","4658743654","2020-02-01","30000","DEBIT"),
-            AccountDetails("Anna","4658743654","2020-02-01","30000","DEBIT"),
-            AccountDetails("Hoyo","4658743654","2020-02-01","30000","DEBIT"),
+            AccountDetails("Mike","Savings Account","4658743654","2020-02-01","30000","DEBIT","KSH"),
+            AccountDetails("Hannah","Student Account","4658743654","2020-02-01","30000","CREDIT","KSH"),
+            AccountDetails("Judith","Savings Account","4658743654","2020-02-01","30000","CREDIT","UGSH"),
+            AccountDetails("Jane","Student Account","4658743654","2020-02-01","30000","DEBIT","UGSH"),
+            AccountDetails("Juliet","Current Account","4658743654","2020-02-01","30000","DEBIT","TZSH"),
 
             )
         var walletAdapter=WalletAdapter(walletDetails)

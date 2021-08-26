@@ -1,11 +1,16 @@
 package com.example.assessment2.Models
 
 data class AccountDetails(
+    var accountName:String,
     var description:String,
     var reference:String,
     var date:String,
     var amount:String,
-    var transactionType:String
+    var transactionType:String,
+    var currency:String,
+
+
+
 )
 //You are building a mobile wallet app in which a transaction is represented using a
 //data class with the following attributes:
